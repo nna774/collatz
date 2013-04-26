@@ -1,8 +1,9 @@
 #include <iostream>
 #include <list>
 #include <sstream>
+#include <boost/multiprecision/cpp_int.hpp>
 
-using ULL = unsigned long long;
+using ULL = boost::multiprecision::cpp_int;
 using List = std::list<ULL>; 
 
 inline void collatz(ULL n,List* list){
